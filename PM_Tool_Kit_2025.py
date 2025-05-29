@@ -1,14 +1,14 @@
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from scipy.stats import norm
 from scipy.stats import jarque_bera
 from scipy.optimize import minimize
-import matplotlib.ticker as ticker
+#import matplotlib.ticker as ticker
 # import seaborn as sns
 
-from fredapi import Fred
+#from fredapi import Fred
 
 ### 인터넷 접속 라이브러리 (한국은행,통계청)
 import requests

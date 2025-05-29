@@ -1,7 +1,6 @@
 streamlit
 pandas
 yfinance
-FinanceDataReader
 google-generativeai==0.3.2
 google-search-results
 git+https://github.com/langchain-ai/langgraph.git@main#subdirectory=libs/langgraph

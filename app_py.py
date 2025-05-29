@@ -9,6 +9,7 @@ Original file is located at
 
 # app.py
 import streamlit as st
+st.set_page_config(page_title="주식 추천 에이전트", layout="centered")
 import pandas as pd
 import sys
 import os
@@ -44,9 +45,6 @@ except Exception as e:
 #        export SERPAPI_API_KEY="your_key"
 #    또는, Streamlit Secrets를 사용하려면 langgraph_backend.py의 API 키 로드 부분을
 #    st.secrets.get()으로 변경해야 합니다. 여기서는 os.environ.get()을 유지합니다.
-
-
-st.set_page_config(page_title="주식 추천 에이전트", layout="centered")
 
 st.title("📈 AI 주식 추천 에이전트")
 st.markdown("궁금한 주식 관련 질문을 입력하시면 AI가 종목을 추천해 드립니다.")

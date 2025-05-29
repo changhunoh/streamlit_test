@@ -4,3 +4,4 @@ yfinance
 google-generativeai==0.3.2
 google-search-results
 langgraph
+finance-datareader

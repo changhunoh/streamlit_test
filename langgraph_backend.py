@@ -25,12 +25,8 @@ from serpapi import GoogleSearch, NaverSearch
 from langgraph.graph import StateGraph, START, END # LangGraph 임포트
 
 # --- API Key 설정 (Streamlit 환경에 맞게 변경) ---
-# 로컬 환경 변수 또는 Streamlit Secrets에서 API 키를 가져옵니다.
-# Colab에서 실행하는 경우 userdata.get()을 사용하고,
-# Streamlit 앱에서는 st.secrets["KEY_NAME"] 또는 os.environ.get("KEY_NAME")을 사용해야 합니다.
-# 여기서는 os.environ.get()을 사용하여 유연성을 높였습니다.
-GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
-SERPAPI_API_KEY = os.environ.get("SERPAPI_API_KEY")
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
+SERPAPI_API_KEY = st.secrets.get("SERPAPI_API_KEY")
 
 if not GOOGLE_API_KEY:
     print("Warning: GOOGLE_API_KEY 환경 변수가 설정되지 않았습니다.")
